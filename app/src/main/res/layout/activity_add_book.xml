@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".AddBook">
+
+
+    <EditText
+        android:id="@+id/bk_name"
+        style="@style/viewCustom"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="13dp"
+        android:backgroundTint="@android:color/white"
+        android:ems="10"
+        android:hint="@string/bk_name"
+        android:inputType="text"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white" />
+
+    <EditText
+        android:id="@+id/bk_author"
+        style="@style/viewCustom"
+        android:layout_marginTop="13dp"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/bk_name"
+        android:backgroundTint="@android:color/white"
+        android:ems="10"
+        android:hint="@string/bk_author"
+        android:inputType="text"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white" />
+
+    <EditText
+        android:id="@+id/bk_isbn10"
+        style="@style/viewCustom"
+        android:layout_marginTop="13dp"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/bk_author"
+        android:backgroundTint="@android:color/white"
+        android:ems="10"
+        android:hint="@string/bk_isbn10"
+        android:inputType="text"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white" />
+
+    <EditText
+        android:id="@+id/bk_isbn13"
+        style="@style/viewCustom"
+        android:layout_marginTop="13dp"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/bk_isbn10"
+        android:backgroundTint="@android:color/white"
+        android:ems="10"
+        android:hint="@string/bk_isbn13"
+        android:inputType="text"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white" />
+
+    <EditText
+        android:id="@+id/bk_lang"
+        style="@style/viewCustom"
+        android:layout_marginTop="13dp"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/bk_isbn13"
+        android:backgroundTint="@android:color/white"
+        android:ems="10"
+        android:hint="@string/bk_lang"
+        android:inputType="text"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white" />
+
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_centerInParent="true"
+        android:layout_width="325dp"
+        android:layout_height="?attr/dropdownListPreferredItemHeight"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/bk_lang"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/spinner_bg"
+        android:dropDownWidth="300dp"
+        android:dropDownVerticalOffset="?attr/dropdownListPreferredItemHeight"
+        android:paddingRight="14dp"
+        android:popupBackground="@android:color/black"
+        android:popupElevation="3dp"
+        android:spinnerMode="dropdown"
+        android:stateListAnimator="@drawable/spinner_sla" />
+
+    <ImageButton
+        android:id="@+id/btn_choose_image"
+        style="@style/viewCustom"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="118dp"
+        android:layout_height="127dp"
+        android:layout_below="@id/spinner"
+        app:srcCompat="@drawable/googleg_standard_color_18" />
+
+    <Button
+        android:id="@+id/btn_AddBook"
+        style="@style/viewCustom"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/btn_choose_image"
+        android:layout_marginTop="82dp"
+        android:background="@drawable/button_bg"
+        android:text="@string/AddBook"
+        android:textColor="@color/black"
+        android:textAllCaps="false"
+        android:textStyle="bold" />
+
+
+
+</RelativeLayout>

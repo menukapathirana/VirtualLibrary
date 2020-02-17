@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/usercardview"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="120dp">
+
+        <ImageView
+            android:id="@+id/user_image"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/vsto" />
+    </androidx.cardview.widget.CardView>
+
+
+    <TextView
+        android:id="@+id/txt_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/usercardview"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/green"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:text="Username" />
+
+    <Button
+        android:id="@+id/btn_AddBookView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/usercardview"
+        android:layout_marginTop="76dp"
+        android:background="@color/tranperant"
+        android:padding="16dp"
+        android:text="Add a Book"
+        android:textAlignment="viewStart"
+        android:textAllCaps="false"
+        android:textColor="@color/green"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/headingLing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/usercardview"
+        android:background="@drawable/mainheading"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/headingLing"
+        android:layout_marginTop="15dp"
+        android:paddingLeft="10dp"
+        android:text="Book Details"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="20dp" />
+
+
+</RelativeLayout>

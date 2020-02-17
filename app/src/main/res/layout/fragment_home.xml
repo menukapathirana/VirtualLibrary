@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+
+    <ImageView
+        android:id="@+id/bkMonth"
+        android:layout_width="match_parent"
+        android:layout_height="445dp"
+        android:adjustViewBounds="true"
+        android:layout_below="@id/btn_myList"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:cropToPadding="true"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/bkmonth" />
+
+    <ImageView
+        android:id="@+id/homeImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        app:srcCompat="@mipmap/ic_app_image" />
+
+    <TextView
+        android:id="@+id/btn_myList"
+        android:clickable="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="220dp"
+        android:layout_marginTop="20dp"
+        android:layout_toLeftOf="@id/homeImage"
+        android:gravity="center_horizontal"
+        android:textAllCaps="false"
+        android:text="My List"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+
+
+
+    <TextView
+        android:id="@+id/btn_Borrowed"
+        android:clickable="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="120dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:textAllCaps="false"
+        android:text="Borrowed"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+
+
+    <TextView
+        android:id="@+id/btn_Lend"
+        android:clickable="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_toLeftOf="@id/btn_Borrowed"
+        android:gravity="center_horizontal"
+        android:textAllCaps="false"
+        android:text="Lend"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+
+
+    <TextView
+        android:id="@+id/txt_latest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bkMonth"
+        android:text="@string/Latest"
+        android:textColor="@color/white"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:background="@color/black"
+        android:layout_width="match_parent"
+        android:layout_below="@id/txt_latest"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:id="@+id/txt_trend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/recyclerView"
+        android:text="@string/Trend"
+        android:textColor="@color/white"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerTrending"
+        android:background="@color/black"
+        android:layout_width="match_parent"
+        android:layout_below="@id/txt_trend"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        android:layout_height="350dp" />
+
+
+
+</RelativeLayout>
+    </ScrollView>

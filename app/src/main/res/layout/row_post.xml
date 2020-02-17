@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="100dp"
+    android:layout_height="150dp"
+    android:layout_margin="3dp"
+    android:background="@color/black"
+    android:orientation="vertical"
+    app:cardBackgroundColor="@color/black">
+
+
+   <!--<TextView
+        android:id="@+id/imgTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible"
+        android:text="Default"
+        android:textColor="@android:color/transparent" />
+-->
+    <ImageView
+        android:id="@+id/BookView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_marginTop="2dp"
+        android:layout_centerHorizontal="true"
+         />
+
+
+    
+
+</RelativeLayout>

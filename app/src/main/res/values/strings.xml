@@ -1,0 +1,72 @@
+<resources>
+    <string name="app_name">Admire</string>
+
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="login_title">Login</string>
+    <string name="create_act">Create Account</string>
+
+    <string name="already_member">Already member? Login</string>
+
+    <string name="etEmail">Email</string>
+    <string name="etPassword">Password</string>
+
+
+    <string name="bk_name">Title</string>
+    <string name="bk_isbn10">ISBN-10</string>
+    <string name="bk_isbn13">ISBN-13</string>
+    <string name="bk_author">Author</string>
+    <string name="bk_lang"> Langugae</string>
+    <string name="AddBook">Add Book</string>
+
+    <string name="send_password_reset_email">Send password reset email</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_search">Search</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_more">More</string>
+
+    <string name="title_shop">Shop</string>
+    <string name="title_gifts">Gifts</string>
+    <string name="title_cart">Cart</string>
+    <string name="title_profile">Profile</string>
+    <string name="title_activity_main_view">MainViewActivity</string>
+    <string name="Latest">Newest Arrivals</string>
+
+    <string name="Trend">Trending For You</string>
+    <string name="Avail">Available</string>
+
+    <string-array name="book_category">
+        <item>Select Category</item>
+        <item>Action &amp; Adventure</item>
+        <item>Americas</item>
+        <item>Arts, Music &amp; Photography</item>
+        <item>Biographies</item>
+        <item>Children Books</item>
+        <item>Classics</item>
+        <item>Contemporary</item>
+        <item>Education &amp; Reference</item>
+        <item>Genre Fiction</item>
+        <item>Historical</item>
+        <item>History</item>
+        <item>Humanities</item>
+        <item>Literary</item>
+        <item>Literature &amp; Fiction</item>
+        <item>Military</item>
+        <item>Mystery, Thriller &amp; Suspense</item>
+        <item>Politics &amp; Social Sciences</item>
+        <item>Religion &amp; Spirituality</item>
+        <item>Science &amp; Math</item>
+        <item>Science Fiction &amp; Fantasy</item>
+        <item>Social Sciences</item>
+        <item>Textbooks</item>
+        <item>Thrillers</item>
+        <item>Travel</item>
+        <item>United States</item>
+        <item>Other</item>
+    </string-array>
+
+
+</resources>

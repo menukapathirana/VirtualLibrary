@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".DisplayBook">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+
+        android:background="@drawable/book_picture_frame">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardview"
+            android:layout_width="220dp"
+            android:layout_height="220dp"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="120dp">
+
+            <ImageView
+                android:id="@+id/bk_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/vsto" />
+        </androidx.cardview.widget.CardView>
+
+
+        <TextView
+            android:id="@+id/bk_titile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cardview"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="15dp"
+            android:text="Book Title"
+            android:textColor="@color/white"
+            android:textSize="25dp" />
+
+        <!--  <TextView
+            android:id="@+id/tv_datencate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bk_titile"
+            android:layout_marginLeft="115dp"
+            android:text="Date"
+            android:textColor="@color/green"
+            android:textSize="15dp"
+            android:textStyle="italic" />
+-->
+        <TextView
+            android:id="@+id/bk_datencate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bk_titile"
+            android:layout_marginLeft="215dp"
+            android:text="Book Date"
+            android:textColor="@color/white"
+            android:textSize="12dp"
+            android:textStyle="italic" />
+
+
+        <TextView
+            android:id="@+id/tv_lang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bk_titile"
+            android:layout_toRightOf="@id/bk_datencate"
+            android:text=","
+            android:textColor="@color/white"
+            android:textSize="12dp"
+            android:textStyle="italic" />
+
+
+        <TextView
+            android:id="@+id/bk_lang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bk_titile"
+            android:layout_toRightOf="@id/tv_lang"
+            android:text="Book Language"
+            android:textColor="@color/white"
+            android:textSize="12dp"
+            android:textStyle="italic" />
+
+
+        <TextView
+            android:id="@+id/tv_author"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bk_lang"
+            android:layout_marginLeft="15dp"
+            android:text="Book Author"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+             />
+
+        <TextView
+            android:id="@+id/bk_author"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bk_lang"
+            android:layout_marginLeft="125dp"
+            android:layout_marginTop="10dp"
+            android:text="Book Author"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/tv_addedby"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bk_author"
+            android:layout_marginLeft="15dp"
+            android:text="Book Addedby"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:id="@+id/bk_addedby"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bk_author"
+            android:layout_marginLeft="125dp"
+            android:text="Book Addedby"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            android:layout_marginTop="10dp"
+            android:textStyle="italic" />
+
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_request_lend"
+        style="@style/viewCustom"
+        android:layout_marginTop="479dp"
+        android:background="@drawable/button_bg"
+        android:fontFamily="@font/rambla_bold"
+        android:text="Request For Lend"
+        android:layout_centerHorizontal="true"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

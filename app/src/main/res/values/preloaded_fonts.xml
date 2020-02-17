@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/alice</item>
+        <item>@font/nunito_sans</item>
+        <item>@font/nunito_sans_black</item>
+        <item>@font/nunito_sans_bold</item>
+        <item>@font/rambla_bold</item>
+    </array>
+</resources>
